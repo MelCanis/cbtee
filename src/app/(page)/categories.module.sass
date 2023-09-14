@@ -1,0 +1,79 @@
+@import "../variables"
+.categories
+    +w(100%)
+    +mnh($size*40)
+    +p($size*2)
+    +df
+    +fdc
+    justify-content: space-evenly
+
+    h1
+        +tac
+.content
+    +whs(100%)
+    +df
+    +fwr
+    +jca
+    +cenc
+    +posr
+.category
+    +posr
+    +df
+    +fdc
+    +m($size)
+    +cp
+    +cenc
+    +o(.85)
+    +trs($transition)
+    
+    
+    h2
+        +mb($size)
+        +fs($size*1.5)
+        +c($grey2)
+        +fw(300)
+    .images
+        +df
+        +jcb
+    img
+        
+        
+    button
+        +cen
+        +cp
+        +fs($size)
+        +rad($roundness)
+        +trs($transition)
+        +z(3)
+        +o(0)
+        +bg($white)
+        +bdrn
+        +c($black)
+        +fs($size*1.5)
+        +fw(300)
+        +t(45%)
+        +p($size $size*2)
+
+    &:hover
+        +o(1)
+        img
+            box-shadow: 0 $size*.5 $size transparentize($black, .5)
+        h2
+            +c($black)
+        button
+            +o(1)
+            
+
+.image
+    +wh($size*14, $size*18.5)
+    +posr
+    +mb($size)
+    object-fit: cover
+    +rad($roundness)
+    +trs($transition)
+    &:first-of-type
+        +posr
+        +z(2)
+    &:last-of-type
+        +posr
+        +z(1)

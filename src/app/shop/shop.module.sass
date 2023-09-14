@@ -1,0 +1,40 @@
+@import "../variables"
+.Shop
+    +pt($size*5)
+    +mnh(100vh)
+.filters
+    +p($size)
+    +pl($size*3)
+    +df
+    +aic
+    +acc
+    +fwr
+    @media (orientation: portrait)
+        +jce
+.svg
+    +whs($size)
+    +fl($grey)
+    +mr($size)
+    +mb($size*.5)
+.filter
+    +c(#777)
+    +rad($roundness)
+    +mr($size)
+    +mb($size*.5)
+    +p($size*.5 $size)
+    +cp
+    +trs($transition)
+    &:hover
+        +c($black)
+.filterActive
+    +bg($grey)
+    +c($white)
+    &:hover
+        +c($white)
+
+.products
+    +df
+    +fwr
+    justify-content: space-evenly
+    justify-items: flex-start
+    +p($size $size*2)

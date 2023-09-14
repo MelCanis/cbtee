@@ -1,0 +1,20 @@
+@import "../variables"
+
+.footer
+    +wh(100%, $size*4)
+    +bg($accent-dark)
+    +df
+    +jcb
+    +p($size $size*4)
+    @media (orientation: portrait)
+        +p(0 $size*2)
+    +aic
+    span
+        +df
+        +aic
+    p
+        +c($white)
+        +fs($size*.75)
+    svg
+        +fl($white)
+        +mr($size)

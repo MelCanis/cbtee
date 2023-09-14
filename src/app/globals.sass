@@ -1,0 +1,32 @@
+@import "./variables"
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+    +lato
+    +c($black)
+
+
+html, body
+    width: 100%
+    height: 100%
+    position: relative
+
+
+a
+    text-decoration: none
+
+.main
+    +whs(100%)
+.page
+    +mnwhs(100%)
+    +mnh(100vh)
+    +pt($size*4)
+
+.Loading
+    
+    h1
+        +c($grey)
+    +cenc

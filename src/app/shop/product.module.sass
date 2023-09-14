@@ -1,0 +1,34 @@
+@import "../variables"
+.product
+    +rad($roundness)
+    +oh
+    +bg($white)
+    +bdr($accent-light)
+    @media (min-width: 950px)
+        +w(17.5%)
+    @media (max-width: 950px)
+        +w(24%)
+    @media (orientation: portrait)
+        +w(48%)    
+    +mb($size*2)
+    +tac
+    +pb($size*1.5)
+    +df
+    +fdc
+    h3
+        +w(80%)
+        +m($size*.5 auto)
+        +fw(300)
+    h5
+        +fs($size*1.5)
+        +c($orange)
+    +trs($transition)
+    &:hover
+        box-shadow: 0 $size*.5 $size*2 transparentize($black, .75)
+.img
+    +mb($size)
+    +w(100%)
+.span
+    +df
+    +fdc
+    +cenc
