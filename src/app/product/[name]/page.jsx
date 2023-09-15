@@ -27,7 +27,7 @@ export default function Product ({ params: { name } }) {
     return (
         <div className="Product page">
             <div className="image">
-                <Image src={`/products/${product.name.replace(/_/g, " ").replace(/#/g, "-")}.jpg`} alt={name} width="300" height="400"/>
+                <Image src={`/products/${product.name.replace(/\-/g, " ").replace(/#/g, "X")}.jpg`} alt={name} width="300" height="400"/>
             </div>
             <div className="info">
                 <h2 className="name">{product.name}</h2>

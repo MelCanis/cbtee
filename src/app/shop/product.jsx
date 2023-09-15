@@ -8,7 +8,7 @@ export default function Product ({n, name, price}) {
             <div className={product.image}>
                 <Image
                 className={product.img}
-                src={`/products/${name.replace(/_/g, " ").replace(/#/g, "-")}.jpg`}
+                src={`/products/${name.replace(/\-/g, " ").replace(/#/g, "X")}.jpg`}
                 width={200}
                 height={300}
                 alt={name}
