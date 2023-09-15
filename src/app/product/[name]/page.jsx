@@ -15,10 +15,10 @@ const checkout = async _ => {
         },
         body: JSON.stringify({ items: [{name: "named", price: 100}] })
     })
-    console.log(res)
+    console.log({res})
     const json = await res.json();
-    console.log(json)
-    window.location = json.url;
+    console.log({json})
+    // window.location = json.url;
 }
 
 export default function Product ({ params: { name } }) {

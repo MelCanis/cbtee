@@ -37,7 +37,7 @@ export default async function Shop ({params: { filter }}) {
                 <Link href="/shop/cages" className={shop.filter + (filter == "cages" ? " " + shop.filterActive : "")}>CAGES</Link>
             </div>
             <div className={shop.products}>
-                {list.map(i => <Product key={i.name} {...i}/>)}
+                {list.map((i, n) => <Product key={n} n={n} {...i}/>)}
             </div>
         </div>
     )

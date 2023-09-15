@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import product from "./product.module.sass"
 
-export default function Product ({name, price}) {
+export default function Product ({n, name, price}) {
     return (
         <Link className={product.product} href={`/product/${name.replace(/#/g, "X").split(" ").join("-")}`}>
             <div>
@@ -12,6 +12,7 @@ export default function Product ({name, price}) {
                 width={200}
                 height={300}
                 alt={name}
+                priority={n == 0 ? true : false}
                 />
                 <div className={product.span}>
                     <h3>{name}</h3>
